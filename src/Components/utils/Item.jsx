@@ -1,8 +1,5 @@
 import { StarIcon, ShoppingBagIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-
-
-
 const Item = ({ifExists,id,title,text,rating,btn, img,price,color,shadow}) => {
     console.log(id)
   return (
