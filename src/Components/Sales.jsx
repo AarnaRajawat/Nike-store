@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from './utils/title'
-import Item from './utils/item'
+import Title from './utils/Title'
+import Item from './utils/Item'
 
 const Sales = ({ifExists ,endpoint:{title,items}}) => {
 
