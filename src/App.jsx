@@ -1,12 +1,14 @@
 import React from 'react'
-import { FlexContent,Hero, Sales,Stories} from './Components';
-import { heroapi,toprateslaes,popularsales,highlight,sneaker,story} from './Data/Data';
+import { FlexContent,Footer,Hero, Navbar, Sales,Stories} from './Components';
+import { heroapi,toprateslaes,popularsales,highlight,sneaker,story,footerAPI} from './Data/Data';
 import './index.css'; 
 import Chatbot from "./Components/Chatbot";
 
 
 const App = () => {
   return (
+    <>
+    <Navbar />
 
    <main className='flex flex-col gap-16 relative'>
     <Hero heroapi={heroapi} />
@@ -15,6 +17,7 @@ const App = () => {
     <Sales endpoint= {toprateslaes}/>
     <FlexContent endpoint={sneaker}/>
     <Stories story={story} />
+    <Footer footerApI={footerAPI}/>
   
     
    
@@ -23,6 +26,7 @@ const App = () => {
     
 
    </main>
+   </>
   )
 }
 

@@ -3,7 +3,7 @@ import ChatInput from "./ChatInput";
 
 const Chatbot = () => {
     const [messages, setMessages] = useState([]);
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
     const [options, setOptions] = useState([]); // State to handle selective inputs (buttons)
 
     const generateBotResponse = (userMessage) => {
