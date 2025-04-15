@@ -4,9 +4,11 @@ import './index.css'; // Replace with the correct path to your CSS file
 import App from './App.jsx'
 import {Provider} from  "react-redux"
 import Store  from "./app/store.js"
+import {Toaster} from 'react-hot-toast'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <Provider store={Store}>
+    <Toaster  position='top-center' reverseOrder={false} />
   <App />
   </Provider>
   </StrictMode>,
