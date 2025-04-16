@@ -21,11 +21,9 @@ const Cart = () => {
   const totalAmount =  useSelector(selectTotalAmount);
   const totalQTY = useSelector(selectTotalQuantity)
   console.log(cartItems)
-
   useEffect(() => {
     dispatch(setGetTotals())
-
-  },[cartItems, dispatch])
+  }, [cartItems, dispatch])
   
       const onCartToggle = () => {
   
