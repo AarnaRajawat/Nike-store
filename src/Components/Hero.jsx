@@ -30,6 +30,7 @@ const Hero = ({heroapi : {title,subtitle,btntext,img,sociallinks,videos}}) => {
               <SocialLink
               key={i}
               icon= {val.icon}
+              link = {val.link}
               />
               ))}
               
